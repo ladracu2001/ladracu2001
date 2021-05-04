@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Trader Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='login-modal.js' type="module"></script>
+    <script src='./src/views/login/home-modal.js' type="module"></script>
+    <script src='./src/views/login/sign-in.js' type="module"></script>
+    <script src="./src/views/login/sign-up.js" type="module"></script>
+    <script src="./src/views/login/about-trader.js" type="module"></script>
+    <script src="./src/views/login/features-trader.js" type="module"></script>
+    <script src="./src/views/login/faq-trader.js" type="module"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+</head>
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+        <span class="fs-4">Trader Application</span>
+      </a>
+  
+      <ul class="nav nav-pills">
+        <!-- <li class="nav-item"><a href="#" class="nav-link active">Home</a></li> -->
+        <!-- <li class="nav-item"><a href="#" class="nav-link">Features</a></li> -->
+        <!-- <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li> -->
+        <!-- <li class="nav-item"><a href="#aboutModalCenter" class="nav-link" data-toggle="modal" data-target="#aboutModalCenter">About</a></li> -->
+        <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#homeModalCenter">Home</button>
+        <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#signupModalCenter">Sign-up</button>
+        <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#featuresModalCenter">Features</button>
+        <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#FAQsModalCenter">FAQs</button>
+        <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#aboutModalCenter">About</button>
+      </ul>
+    </header>
+  </div>
+<body  class="text-center">
+    <div>
+        <sign-in>
+            <div class="checkbox mb-3">
+                <label>
+                  <input type="checkbox" value="remember-me" id="chkRemember"> Remember me
+                </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+        </sign-in>
+    </div>
+    <!-- modal output -->
+    <!-- signup -->
+    <div class="modal fade show" id="signupModalCenter" tabindex="-1" role="dialog" aria-labelledby="signupModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <login-modal>
+          <sign-up></sign-up>
+          <!-- <button slot="closebtn" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <button slot="savebtn" class="btn w-100 btn-primary" type="submit">Sign up</button>
+        </login-modal>
+      </div>
+    </div>
+    <!-- features -->
+    <div class="modal fade show" id="featuresModalCenter" tabindex="-1" role="dialog" aria-labelledby="featuresModalCenterTitle" aria-modal="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <login-modal>
+          <features-trader></features-trader>
+        </login-modal>
+      </div>
+    </div>
+    <!-- FAQ -->
+    <div class="modal" id="FAQsModalCenter" tabindex="-1" role="dialog" aria-labelledby="FAQsModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <login-modal>
+          <faq-trader></faq-trader>
+        </login-modal>
+      </div>
+    </div>
+    <!-- about -->
+    <div class="modal" id="aboutModalCenter" tabindex="-1" role="dialog" aria-labelledby="aboutModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <login-modal>
+          <about-trader></about-trader>
+          <p class="mt-5 mb-3 text-muted">&copy;ladracu2001 2021</p>
+        </login-modal>
+      </div>
+    </div>
+</body>
+</html>
