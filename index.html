@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <base href="/">
     <title>Trader Login</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">    
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">   
+    <link rel="shortcut icon" href="favicon.ico" />
 </head>
 <div class="container">
   <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
@@ -16,12 +19,14 @@
     </a>
 
     <ul class="nav nav-pills">
-      <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#homeModalCenter">Home</button>
+      <nav-trader></nav-trader>
+    <!--   <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#homeModalCenter" href="/">Home</button>
       <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#signupModalCenter">Sign-up</button>
       <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#featuresModalCenter">Features</button>
       <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#FAQsModalCenter">FAQs</button>
-      <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#aboutModalCenter">About</button>
+      <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#aboutModalCenter">About</button> -->
     </ul>
+    
   </header>
 </div>
   <body  class="text-center">
@@ -31,7 +36,7 @@
       <div class="modal-dialog modal-dialog-scrollable">
         <login-modal>
           <sign-up></sign-up>
-          <button slot="savebtn" class="btn w-100 btn-primary" type="submit" onclick="_welcomeUser()">Sign up</button>
+          <button slot="savebtn" class="btn w-100 btn-primary">Sign up</button>
         </login-modal>
       </div>
     </div>
@@ -60,10 +65,5 @@
         </login-modal>
       </div>
     </div>
-    <script>
-      function _welcomeUser(){
-        console.info('click on btn');
-      }
-    </script>
   </body>
 </html>
