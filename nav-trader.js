@@ -5,24 +5,29 @@ import './src/views/login/nav-log.js';
 export class NavTrader extends LitElement {
   static get properties() {
     return {
-      url_location: { type: String, value: '' },
+      url_location: { type: String},
     };
   }
-
+  constructor(){
+    super();
+    this.url_location = '/';
+  }
   connectedCallback() {
     super.connectedCallback();
-    window.addEventListener('location.pathname', this.url_location);
+    window.addEventListener('popstate', function _ChangeRender(event){
+      this.url_location = event.target.self.location.pathname;
+    });
   }
 
   disconnectedCallback() {
-    window.removeEventListener('location.pathname', this.url_location);
     super.disconnectedCallback();
+    window.removeEventListener('popstate');
   }
 
   render() {
     return [
       this.url_location === '/'
-        ? html`<nav-log></nav-log>`
+        ? html`<nav-log></nav-log>`                               
         : html`<nav-user></nav-user>`,
     ];
   }
