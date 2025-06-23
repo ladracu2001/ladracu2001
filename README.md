@@ -23,7 +23,6 @@ Soy especialista en desarrollo de software con experiencia en backend y frontend
 
 - Email: ladracu2001@gmail.com
 - [LinkedIn](https://linkedin.com/in/lautaromaccio)
-- [Portafolio](https://tu-portafolio.com)
 
 ---
 
