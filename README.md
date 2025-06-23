@@ -12,7 +12,7 @@ Soy especialista en desarrollo de software con experiencia en backend y frontend
 
 ## 🛠️ Tecnologías y herramientas
 
-![Stack](https://skillicons.dev/icons?i=java,dotnet,angular,js,sql,postgres,git,github,linux&theme=light)
+![Stack](https://skillicons.dev/icons?i=java,dotnet,angular,js,sql,oracle,git,github,linux&theme=light)
 
 ## 📈 Estadísticas de GitHub
 
