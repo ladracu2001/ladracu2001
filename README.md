@@ -9,7 +9,7 @@ Soy especialista en desarrollo de software con experiencia en backend y frontend
 - 🎯 Enfocado en el desarrollo de aplicaciones robustas, escalables y mantenibles.
 - 🌱 Siempre aprendiendo nuevas tecnologías y mejores prácticas.
 - 🤝 Abierto a colaborar en proyectos desafiantes y aportar a la comunidad.
-
+- Runner 🏃 | Amante del cine 🎬 | Apasionado por la lectura 📚
 ## 🛠️ Tecnologías y herramientas
 
 ![Stack](https://skillicons.dev/icons?i=java,dotnet,angular,js,git,github,linux&theme=light)
