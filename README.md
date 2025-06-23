@@ -1,4 +1,4 @@
-# 👋 ¡Hola! Soy ladracu2001
+# 👋 ¡Hola! Soy Lautaro, mis amigos me dicen guepa
 
 ¡Bienvenido/a a mi perfil de GitHub!  
 Soy especialista en desarrollo de software con experiencia en backend y frontend, apasionado por la tecnología, la innovación y la mejora continua.
